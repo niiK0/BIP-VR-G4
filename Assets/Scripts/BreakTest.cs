@@ -1,98 +1,94 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine;
 using Oculus.Interaction;
 using Unity.Labs.SuperScience;
-using UnityEngine;
 
 public class BreakTest : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] GameObject brokenItem;
+    [SerializeField] private GameObject brokenItem;
     [SerializeField] private Transform trackObject;
     private Rigidbody rb;
 
     [Header("Stats")]
     [SerializeField] private float upForceOnBreak = 2f;
     [SerializeField] private float randomForceVariation = 1f;
-    [SerializeField] float speedBreakThreshold;
-    [SerializeField] bool isIndestructuble;
-    [SerializeField] float neededBreakForce;
-    [SerializeField] float density;
 
-    Vector3 lastVelocity;
+    [Header("Physics")]
+    [SerializeField] private bool isIndestructible;
+    [SerializeField] private float neededBreakForce;
+    [SerializeField] private float density;
+    [SerializeField] private int materialStrength;
 
     private PhysicsTracker physicsTracker = new PhysicsTracker();
-    public float newtons;
-    Vector3 lastPosition;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        var position = trackObject.position;
-        physicsTracker.Reset(position, trackObject.rotation, Vector3.zero, Vector3.zero);
-        lastPosition = position;
+        physicsTracker.Reset(trackObject.position, trackObject.rotation, Vector3.zero, Vector3.zero);
     }
 
     void Update()
     {
-        var position = trackObject.position;
-        physicsTracker.Update(position, trackObject.rotation, Time.smoothDeltaTime);
+        physicsTracker.Update(trackObject.position, trackObject.rotation, Time.smoothDeltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        //if (!collision.gameObject.CompareTag("Respawn")) return;
-        Break(collision.gameObject);
+        if (collision.gameObject.TryGetComponent(out BreakTest otherBreakTest))
+        {
+            TryBreak(otherBreakTest);
+        }
     }
 
-    public float GetNewtons()
+    private float GetKineticEnergy()
     {
-        return physicsTracker.Speed * rb.mass;
+        float speed = physicsTracker.Speed;
+        return (speed == 0) ? density : 0.5f * rb.mass * speed * speed; // Fórmula correta de energia cinética
     }
 
-    public float GetDensity()
+    public int GetMaterialStrength => materialStrength;
+
+    private void TryBreak(BreakTest other)
     {
-        return density;
+        Debug.Log(gameObject.name + " is indestructible=" + isIndestructible);
+        if (isIndestructible) return;
+
+        float myKE = physicsTracker.Speed;
+        //float myKE = GetKineticEnergy();
+        float myBreakThreshold = neededBreakForce * density;
+
+        Debug.Log(gameObject.name + " is trying to break itself with KE=" + myKE + " and Threshold:" + myBreakThreshold);
+
+        int otherMS = other.GetMaterialStrength;
+
+        bool iBreak = false;
+
+        if (materialStrength <= otherMS && myKE >= myBreakThreshold)
+        {
+            iBreak = true;
+        }
+
+        if (iBreak) BreakObject();
     }
 
-    public void Break(GameObject collision)
+    private void BreakObject()
     {
-        var newtons = GetNewtons();
-        var colNewtons = collision.GetComponent<BreakTest>().GetNewtons();
-
-        if (isIndestructuble) return;
-        //if (physicsTracker.Speed < speedBreakThreshold) return;
-        if (newtons > colNewtons) return;
-
-        // Position the broken object correctly
-        brokenItem.transform.position = transform.position;
-        brokenItem.transform.rotation = transform.rotation;
+        brokenItem.transform.SetPositionAndRotation(transform.position, transform.rotation);
         brokenItem.SetActive(true);
 
-
-        Rigidbody[] rigidbodies = brokenItem.GetComponentsInChildren<Rigidbody>();
-
-        foreach (var piece in rigidbodies)
+        foreach (var piece in brokenItem.GetComponentsInChildren<Rigidbody>())
         {
-            // Base force using the last velocity
-            Vector3 force = physicsTracker.Velocity;
-
-            // Add some random variation to the force
-            force += new Vector3(
+            Vector3 force = physicsTracker.Velocity + new Vector3(
                 UnityEngine.Random.Range(-randomForceVariation, randomForceVariation),
-                UnityEngine.Random.Range(0, upForceOnBreak), // Ensure force goes upwards a bit
+                UnityEngine.Random.Range(0, upForceOnBreak),
                 UnityEngine.Random.Range(-randomForceVariation, randomForceVariation)
             );
 
-            piece.velocity = force;  // Directly set velocity for instant effect
-            piece.angularVelocity = rb.angularVelocity; // Transfer rotation momentum
+            piece.velocity = force;
+            piece.angularVelocity = rb.angularVelocity;
         }
 
-        // Disable the original object
         gameObject.SetActive(false);
     }
-
-
-
 }
