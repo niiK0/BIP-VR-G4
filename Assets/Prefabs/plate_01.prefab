@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8378823889721504479}
   - component: {fileID: 7458517838463409810}
   - component: {fileID: 1031670939366537718}
-  - component: {fileID: 7937588592713566003}
-  m_Layer: 0
+  - component: {fileID: 8675214950896659458}
+  m_Layer: 6
   m_Name: plate_01_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,9 +93,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059117683535493895}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.5
+  m_Drag: 3
+  m_AngularDrag: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -112,8 +112,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &7937588592713566003
-SphereCollider:
+--- !u!65 &8675214950896659458
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,8 +131,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.0008122978
-  m_Center: {x: -0.00010324092, y: 0.00014930262, z: 0.00003662675}
+  m_Size: {x: 0.0016245956, y: 0.001276008, z: 0.00019187605}
+  m_Center: {x: -0.000103241386, y: 0.00014930448, z: 0.000036631405}
 --- !u!1 &1591068935831040342
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,8 +145,8 @@ GameObject:
   - component: {fileID: 6971007060063921493}
   - component: {fileID: 36152723957719295}
   - component: {fileID: 4534937911690556627}
-  - component: {fileID: 7929250455838029970}
-  m_Layer: 0
+  - component: {fileID: 3408705341339038949}
+  m_Layer: 6
   m_Name: plate_01_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,9 +226,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591068935831040342}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.5
+  m_Drag: 3
+  m_AngularDrag: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -245,8 +245,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &7929250455838029970
-SphereCollider:
+--- !u!65 &3408705341339038949
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -264,8 +264,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.00051666115
-  m_Center: {x: -0.000010373784, y: -0.00006073482, z: -0.0000032507185}
+  m_Size: {x: 0.00080394675, y: 0.0010333223, z: 0.00010146839}
+  m_Center: {x: -0.000010379139, y: -0.00006072178, z: -0.0000032507185}
 --- !u!1 &2126201054031086395
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,8 +311,8 @@ GameObject:
   - component: {fileID: 4689409053385471829}
   - component: {fileID: 7215359323681008600}
   - component: {fileID: 1219488005710092275}
-  - component: {fileID: 5624787787545924192}
-  m_Layer: 0
+  - component: {fileID: 3782770603301743208}
+  m_Layer: 6
   m_Name: plate_01_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,9 +392,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3848014731280256212}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.5
+  m_Drag: 3
+  m_AngularDrag: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -411,8 +411,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &5624787787545924192
-SphereCollider:
+--- !u!65 &3782770603301743208
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -430,8 +430,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.0004729005
-  m_Center: {x: -0.000056891367, y: 0.00007066112, z: -0.000012748802}
+  m_Size: {x: 0.0004648754, y: 0.000945801, z: 0.00005318911}
+  m_Center: {x: -0.000056888573, y: 0.00007067229, z: -0.000012747871}
 --- !u!1 &4923743714201500542
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,8 +444,8 @@ GameObject:
   - component: {fileID: 8277973447112100682}
   - component: {fileID: 9049526941677888035}
   - component: {fileID: 6769602649245932404}
-  - component: {fileID: 6407314569755995157}
-  m_Layer: 0
+  - component: {fileID: 4436934631544572279}
+  m_Layer: 6
   m_Name: plate_01_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,9 +525,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4923743714201500542}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.5
+  m_Drag: 3
+  m_AngularDrag: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -544,8 +544,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &6407314569755995157
-SphereCollider:
+--- !u!65 &4436934631544572279
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -563,8 +563,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.000558747
-  m_Center: {x: -0.000039080405, y: -0.00008937652, z: 0.000023846062}
+  m_Size: {x: 0.0008837539, y: 0.001117494, z: 0.0001833109}
+  m_Center: {x: -0.000039080405, y: -0.000089374655, z: 0.000023845596}
 --- !u!1 &5315679339848635438
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,8 +577,8 @@ GameObject:
   - component: {fileID: 7534424687721297083}
   - component: {fileID: 6011727272245218440}
   - component: {fileID: 3599285265344506044}
-  - component: {fileID: 1380964047142157762}
-  m_Layer: 0
+  - component: {fileID: 8150164489827562880}
+  m_Layer: 6
   m_Name: plate_01_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,9 +658,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5315679339848635438}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.5
+  m_Drag: 3
+  m_AngularDrag: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -677,8 +677,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &1380964047142157762
-SphereCollider:
+--- !u!65 &8150164489827562880
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -696,8 +696,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.0007188871
-  m_Center: {x: 0.0001555332, y: 0.00003425216, z: 0.000018952902}
+  m_Size: {x: 0.0014377742, y: 0.0011466595, z: 0.00019028648}
+  m_Center: {x: 0.00015552691, y: 0.00003425216, z: 0.00001895523}
 --- !u!1 &6843760410025824679
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ Transform:
   m_GameObject: {fileID: 6843760410025824679}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.3476}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -765,7 +765,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e393066dfa562ac4ba654cd4c19c434d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -806,7 +806,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
@@ -832,7 +832,7 @@ MonoBehaviour:
   randomForceVariation: 1
   isIndestructible: 0
   neededBreakForce: 1
-  density: 5
+  density: 2.5
   materialStrength: 1
 --- !u!114 &4375164250582169687
 MonoBehaviour:
@@ -973,8 +973,8 @@ GameObject:
   - component: {fileID: 7279338406988317687}
   - component: {fileID: 2280393083456577434}
   - component: {fileID: 2228776538646210774}
-  - component: {fileID: 6673009147057640905}
-  m_Layer: 0
+  - component: {fileID: 1596331535731450836}
+  m_Layer: 6
   m_Name: plate_01_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1054,9 +1054,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7601791900091152299}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.5
+  m_Drag: 3
+  m_AngularDrag: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1073,8 +1073,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &6673009147057640905
-SphereCollider:
+--- !u!65 &1596331535731450836
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1092,8 +1092,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.0005023725
-  m_Center: {x: 0.0001506089, y: -0.00011863693, z: -0.0000011159284}
+  m_Size: {x: 0.001004745, y: 0.0008316415, z: 0.00017427951}
+  m_Center: {x: 0.00015060983, y: -0.00011862948, z: -0.0000011140658}
 --- !u!1 &8940165011216800090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1103,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8600195343835218912}
-  m_Layer: 0
+  - component: {fileID: 258520731741057884}
+  m_Layer: 6
   m_Name: plate_broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1131,3 +1132,99 @@ Transform:
   - {fileID: 4971169168732954526}
   m_Father: {fileID: 3337349539067085411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &258520731741057884
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8940165011216800090}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a3f6140c5402caf49a75bc67d298d4a2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

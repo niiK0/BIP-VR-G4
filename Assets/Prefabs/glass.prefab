@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 963072013873125652}
   - component: {fileID: 4053451257944257740}
   - component: {fileID: 701268002169683986}
-  - component: {fileID: 7925426994020126925}
-  - component: {fileID: 7387060429009899389}
-  m_Layer: 0
+  - component: {fileID: 222258257432898793}
+  - component: {fileID: 7030739413125834315}
+  m_Layer: 6
   m_Name: whiskey_glass_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,28 +85,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7925426994020126925
-SphereCollider:
+--- !u!54 &222258257432898793
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651371302252962662}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 0.5
+  m_Drag: 10
+  m_AngularDrag: 5
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &7387060429009899389
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7030739413125834315
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,9 +144,9 @@ GameObject:
   - component: {fileID: 6139967070369377893}
   - component: {fileID: 4065067360817494220}
   - component: {fileID: 7250638564347133675}
-  - component: {fileID: 8791580353751765072}
-  - component: {fileID: 7698992133853066122}
-  m_Layer: 0
+  - component: {fileID: 4886528736957415879}
+  - component: {fileID: 724390433752287845}
+  m_Layer: 6
   m_Name: whiskey_glass_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,28 +218,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8791580353751765072
-SphereCollider:
+--- !u!54 &4886528736957415879
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771100129597612561}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 0.5
+  m_Drag: 10
+  m_AngularDrag: 5
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.00037841065
-  m_Center: {x: 0.000063527485, y: -0.0000066509106, z: -0.00012491365}
---- !u!65 &7698992133853066122
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &724390433752287845
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,7 +265,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.00038358796, y: 0.0007568213, z: 0.0007530491}
-  m_Center: {x: 0.000063527485, y: -0.0000066509106, z: -0.00012491365}
+  m_Center: {x: 0.00006352376, y: -0.000006654636, z: -0.00012490807}
 --- !u!1 &1997081331610183458
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +275,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9040816565240936130}
-  m_Layer: 0
+  - component: {fileID: 7391404375325269507}
+  m_Layer: 6
   m_Name: glass_broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,6 +304,102 @@ Transform:
   - {fileID: 5796130611092707483}
   m_Father: {fileID: 4811117978942310620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7391404375325269507
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997081331610183458}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9be0a76236da1854b80e2c41ca2e1b09, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3009778270411459086
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,9 +411,9 @@ GameObject:
   - component: {fileID: 3663637711605332648}
   - component: {fileID: 1131771352605583118}
   - component: {fileID: 8288748203747645665}
-  - component: {fileID: 8278985198871395990}
   - component: {fileID: 6048679872015772611}
-  m_Layer: 0
+  - component: {fileID: 4123731404098718970}
+  m_Layer: 6
   m_Name: whiskey_glass_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,8 +485,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8278985198871395990
-SphereCollider:
+--- !u!54 &6048679872015772611
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3009778270411459086}
+  serializedVersion: 4
+  m_Mass: 0.5
+  m_Drag: 10
+  m_AngularDrag: 5
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4123731404098718970
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -395,35 +531,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.000425
-  m_Center: {x: -0.000028883835, y: 0.000030204079, z: 0.0001128961}
---- !u!54 &6048679872015772611
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3009778270411459086}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Size: {x: 0.0007788999, y: 0.00046458922, z: 0.00085}
+  m_Center: {x: -0.000028883835, y: 0.000030210598, z: 0.00011289331}
 --- !u!1 &3969152610479161232
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +630,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3969152610479161232}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -532,14 +641,14 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &2443074404200637200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -698,9 +807,9 @@ GameObject:
   - component: {fileID: 4728800715591168523}
   - component: {fileID: 8493392168925208351}
   - component: {fileID: 4550793370266282864}
-  - component: {fileID: 8583011961064000132}
-  - component: {fileID: 5355477524018092621}
-  m_Layer: 0
+  - component: {fileID: 1312229212911480498}
+  - component: {fileID: 9068649404957969923}
+  m_Layer: 6
   m_Name: whiskey_glass_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -772,28 +881,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8583011961064000132
-SphereCollider:
+--- !u!54 &1312229212911480498
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4468471130091070469}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 0.5
+  m_Drag: 10
+  m_AngularDrag: 5
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.000425
-  m_Center: {x: 0.00003058475, y: -0.00005340526, z: 0.00017750569}
---- !u!65 &5355477524018092621
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &9068649404957969923
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -813,7 +928,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.0006982451, y: 0.0003950527, z: 0.00085}
-  m_Center: {x: 0.00003058475, y: -0.00005340526, z: 0.00017750569}
+  m_Center: {x: 0.000030588475, y: -0.000053410848, z: 0.00017750848}
 --- !u!1 &8021193641877458668
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,9 +940,9 @@ GameObject:
   - component: {fileID: 5796130611092707483}
   - component: {fileID: 489885528155594577}
   - component: {fileID: 8746347616006077798}
-  - component: {fileID: 7936244328545029082}
-  - component: {fileID: 8287300271012339594}
-  m_Layer: 0
+  - component: {fileID: 2300012166066104976}
+  - component: {fileID: 4919484728861472790}
+  m_Layer: 6
   m_Name: whiskey_glass_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -899,28 +1014,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7936244328545029082
-SphereCollider:
+--- !u!54 &2300012166066104976
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8021193641877458668}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 0.5
+  m_Drag: 10
+  m_AngularDrag: 5
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.000425
-  m_Center: {x: -0.000017901984, y: 0.000024358456, z: 0.00010196903}
---- !u!65 &8287300271012339594
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4919484728861472790
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -940,7 +1061,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.0006819443, y: 0.00027940498, z: 0.00085}
-  m_Center: {x: -0.000017901984, y: 0.000024358456, z: 0.00010196903}
+  m_Center: {x: -0.000017894534, y: 0.000024355662, z: 0.0001019695}
 --- !u!1 &8427637813822902007
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,9 +1073,9 @@ GameObject:
   - component: {fileID: 7186668458684706404}
   - component: {fileID: 2675032778211763585}
   - component: {fileID: 652831890458450094}
-  - component: {fileID: 1105493122326432209}
-  - component: {fileID: 7178403300182859847}
-  m_Layer: 0
+  - component: {fileID: 6654117538458735419}
+  - component: {fileID: 7556194454338748940}
+  m_Layer: 6
   m_Name: whiskey_glass_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,28 +1147,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1105493122326432209
-SphereCollider:
+--- !u!54 &6654117538458735419
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8427637813822902007}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 0.5
+  m_Drag: 10
+  m_AngularDrag: 5
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.00029573048
-  m_Center: {x: -0.00017573248, y: 0.000010897816, z: 0.00005140123}
---- !u!65 &7178403300182859847
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7556194454338748940
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1067,7 +1194,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.00059146096, y: 0.0005377021, z: 0.00029595097}
-  m_Center: {x: -0.00017573248, y: 0.000010897816, z: 0.00005140123}
+  m_Center: {x: -0.00017572689, y: 0.000010898747, z: 0.000051397972}
 --- !u!1 &8728756993004384145
 GameObject:
   m_ObjectHideFlags: 0
