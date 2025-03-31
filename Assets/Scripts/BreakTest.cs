@@ -112,8 +112,9 @@ public class BreakTest : MonoBehaviour
 
             piece.velocity = new Vector3(Mathf.Clamp(force.x, 0f, 20f), Mathf.Clamp(force.y, 0f, 20f), Mathf.Clamp(force.z, 0f, 20f));
             piece.angularVelocity = new Vector3(Mathf.Clamp(rb.angularVelocity.x, 0f, 20f), Mathf.Clamp(rb.angularVelocity.y, 0f, 20f), Mathf.Clamp(rb.angularVelocity.z, 0f, 20f));
-            //Destroy( piece, 3f);
         }
+
+        brokenItem.GetComponent<RemoveItems>().DestroyStuff();
 
         gameObject.SetActive(false);
     }
