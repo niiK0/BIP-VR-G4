@@ -276,6 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9040816565240936130}
   - component: {fileID: 7391404375325269507}
+  - component: {fileID: 4246164173653215802}
   m_Layer: 6
   m_Name: glass_broken
   m_TagString: Untagged
@@ -400,6 +401,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4246164173653215802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997081331610183458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7e3e73f9ebe6842ae49c9b47bdf4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3009778270411459086
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +563,7 @@ GameObject:
   - component: {fileID: 3877105411080972702}
   - component: {fileID: 4389866092956614360}
   - component: {fileID: 4524226278962965642}
+  - component: {fileID: 8885806004145542606}
   m_Layer: 0
   m_Name: glass
   m_TagString: Untagged
@@ -796,6 +810,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08, y: 0.084999986, z: 0.08}
   m_Center: {x: 0, y: 0.042499755, z: -0.00000071525574}
+--- !u!114 &8885806004145542606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969152610479161232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07525681efbca7a4e9643ab3a592ada7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1380904066630930104}
+  _rigidbody: {fileID: 5443675097191704564}
+  _grabSource: {fileID: 1887054849757061979}
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
+  _movementProvider: {fileID: 0}
 --- !u!1 &4468471130091070469
 GameObject:
   m_ObjectHideFlags: 0
